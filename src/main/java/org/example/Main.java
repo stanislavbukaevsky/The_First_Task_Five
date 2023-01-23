@@ -2,6 +2,17 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        // Напишите код, с помощью которого можно разделить строку на части.
+        // Код должен работать для строк любого размера и любого содержания. Размер частей вы устанавливаете самостоятельно.
+
+        // Создаем и инициализируем переменную text
+        String text = "Создаем и инициализируем переменную text";
+        // Создаем массив подстрок, где в методе split разделителем будет пробел
+        String[] textArrays = text.split(" ");
+        // Запускаем цикл, для того, что бы пройти по нашему массиву подстрок
+        for (String textArray : textArrays) {
+            // Выводим в консоль результат
+            System.out.println(textArray);
+        }
     }
 }
